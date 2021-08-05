@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
 
+<style>
+  
 body{
   background-color: #000000;
 }
@@ -99,7 +102,62 @@ p{
     padding-top: 25px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 479px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+ 
+  .intro {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.waitwhat {
+  grid-column: 1;
+  grid-row: 2 / 4;
+}
+
+.dob_script {
+  grid-column: 1;
+  grid-row: 4;
+  background-position: 100% 20%;
+}
+
+.dob_film {  
+  grid-column: 1;
+  grid-row: 5 / 7;
+  background-position: 100% 40%;
+}
+
+.sunrise {
+  grid-column: 1;
+  grid-row: 7 / 9;
+  background-position: 100% 50%;
+}
+
+
+.els {
+  grid-column: 1;
+  grid-row: 9;
+  background-size: cover;
+  background-position: 100% 10%;
+
+}
+
+.email {
+  grid-column: 1;
+  grid-row: 10;
+  padding-top: 25px;
+}
+
+.alien {
+  grid-column: 1;
+  grid-row: 11;
+  padding-top: 30px;
+}
+}
+
+@media (max-width: 800px) {
   .wrapper {
     grid-template-columns: 1fr;
   }
@@ -287,12 +345,9 @@ p{
 }
 
 
-
-
-
-</head>
 </style>
-
+</head>
+  
 <body>
 
 <div class="wrapper">
